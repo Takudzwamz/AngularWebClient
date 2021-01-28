@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -45,7 +45,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -71,7 +70,6 @@
             "sslKey": "ssl/server.key",
             "sslCert": "ssl/server.crt",
             "ssl": true
-
           },
           "configurations": {
             "production": {
@@ -128,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Client"
+    }
+  },
+  "defaultProject": "Client",
+  "cli": {
+    "analytics": "93a8eaa0-7a96-4036-bc98-9845dd57663a"
+  }
 }
