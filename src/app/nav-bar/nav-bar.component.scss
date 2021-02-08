@@ -1,0 +1,28 @@
+.cart-no{
+   position :absolute;
+   min-height: 25px;
+   min-width: 25px;
+   border-radius: 50%;
+   font-size: 1em;
+   background: red;
+   color:whitesmoke;
+   text-align: center;
+   top: -12px;
+   right: 29px;
+}
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white;
+  border-radius: 100%;
+  text-align: center; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 14px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
