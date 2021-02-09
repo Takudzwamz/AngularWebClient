@@ -1,20 +1,21 @@
 <div class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
-    <img src="/assets/images/Logo2.png" style="max-height: 100px;" alt="logo">
+    <img src="/assets/images/Logo2.png" style="max-height: 100px;" alt="logo" class="logo" routerLink="/">
     <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: larger;">
       <!--<button class="btn mr-3"><i class="bi bi-house-fill"></i>Home</button>
       <button class="btn mr-3"><i class="bi bi-shop"></i>Shop</button>
       <button class="btn mr-3"><i class="bi bi-person-lines-fill"></i>Contact</button>-->
-      <a class="p-2 text-dark" href="#"> <i class="bi bi-house-fill "></i>Home</a>
-      <a class="p-2 text-dark" href="#"> <i class="bi bi-shop"></i>Shop</a>
-      <a class="p-2 text-dark" href="#"> <i class="bi bi-person-lines-fill"></i>Contact</a>
+      <a class="p-2 "[routerLink]="['/']" routerLinkActive="active" 
+      [routerLinkActiveOptions]="{exact: true}"> <i class="bi bi-house-fill"></i>Home</a>
+      <a class="p-2 " routerLink="/shop" routerLinkActive="active"> <i class="bi bi-shop"></i>Shop</a>
+      <a class="p-2 " href="#"> <i class="bi bi-person-lines-fill"></i>Contact</a>
     </nav>
     <div class="d-flex align-items-center">
       <a class="position-relative">
         <i class="bi bi-cart-plus-fill fa-10x mr-5"></i>
         <div class="cart-no">55</div>
       </a>
-      <button class="btn mr-3"><i class="bi bi-box-arrow-in-left"></i>Login</button>
-      <button class="btn mr-3"><i class="bi bi-box-arrow-in-right"></i>Sign up</button>
+      <button class="btn btn-outline-primary mr-2"><i class="bi bi-box-arrow-in-left"></i>Login</button>
+      <button class="btn btn-outline-success my-3"><i class="bi bi-box-arrow-in-right"></i>Sign up</button>
     </div>
     
   </div>
