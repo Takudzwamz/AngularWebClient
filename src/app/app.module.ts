@@ -11,6 +11,8 @@ import { HomeModule } from './home/home.module';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
+import { MaterialModule } from './material/material.module';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -20,6 +22,7 @@ import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
     HttpClientModule,
     CoreModule,
     HomeModule,
+    MaterialModule,
     NgxSpinnerModule,
   ],
   providers: [
